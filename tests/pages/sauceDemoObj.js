@@ -3,11 +3,6 @@ import { expect } from "@playwright/test";
 class SauceDemoPage {
     constructor(page) {
         this.page = page;
-        // this.usernameField = page.locator('#user-name');
-        // this.passwordField = page.locator('#password');
-        // this.loginButton = page.locator('#login-button');
-        // this.errorMessage = page.locator('[data-test="error"]');
-        // this.productTitle = page.locator('.title');
     }
 
     async navigateToUrl(url) {

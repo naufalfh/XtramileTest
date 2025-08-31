@@ -1,4 +1,4 @@
-@Logout @only
+@Logout
 Feature: Sauce Demo Logout
     Background:
         Given User navigates to "https://www.saucedemo.com/"

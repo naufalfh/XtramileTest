@@ -16,6 +16,10 @@ export const elements = {
     "addToCartButton": "//button[@id='add-to-cart-sauce-labs-backpack']",
     "cartBadge": "//span[@data-test='shopping-cart-badge']",
     "removeButton": "//button[@id='remove-sauce-labs-backpack']",
+    // cart
+    "cartIcon": "//a[@data-test='shopping-cart-link']",
+    "removeButtonCart": "//button[@data-test='remove-sauce-labs-backpack']",
+    "cartContainer": "//div[@data-test='inventory-item']",
     // logout
     "menuButton": "//button[@id='react-burger-menu-btn']",
     "logoutButton": "//a[@id='logout_sidebar_link']"

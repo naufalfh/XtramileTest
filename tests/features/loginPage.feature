@@ -1,4 +1,4 @@
-@Login
+@Login @mode:parallel
 Feature: Sauce Demo Login Page
     Background:
         Given User navigates to "https://www.saucedemo.com/"

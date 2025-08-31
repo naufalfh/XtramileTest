@@ -1,4 +1,4 @@
-@Product
+@Product @mode:parallel
 Feature: Sauce Demo Product Page
     Background:
         Given User navigates to "https://www.saucedemo.com/"

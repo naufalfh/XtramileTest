@@ -27,17 +27,17 @@
     > npx playwright test --headed --grep @tags
 
 **Project Structure:**
-tests
-|
-|___features
-|   |__*.feature
-|
-|___fixtures
-|   |__fixtures.js
-|
-|___pages
-|   |__element.js
-|   |__sauceDemoObj.js
-|
-|___steps
+tests\
+|\
+|\___features\
+|   |__*.feature\
+|\
+|___fixtures\
+|   |__fixtures.js\
+|\
+|___pages\
+|   |__element.js\
+|   |__sauceDemoObj.js\
+|\
+|___steps\
     |__sauceDemoSteps.js

@@ -26,10 +26,10 @@
     - To execute by tags
     > npx playwright test --headed --grep @tags
 
-**Project Structure:**
+**Project Structure:**\
 tests\
 |\
-|\___features\
+|___features\
 |   |__*.feature\
 |\
 |___fixtures\

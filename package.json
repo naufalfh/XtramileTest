@@ -1,0 +1,20 @@
+{
+  "name": "xtramiletest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run bddgen && npm run playwright-test --reporter=html,list",
+    "bddgen": "npx bddgen",
+    "playwright-test": "npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "playwright-bdd": "^8.4.0"
+  }
+}

@@ -35,7 +35,7 @@
     - allure: `allure serve allure-results`
 
 
-**Project Structure:**\
+**Project Structure:**
 - tests
     - features
     - *.feature

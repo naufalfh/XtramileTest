@@ -20,4 +20,24 @@
 4. Also install VS Code Extension
     - Cucumber (Gherkin) Full Support
     - Cucumber [just in case]
-5. Open terminal and run `npm run test`
+5. Open terminal and run
+    - To execute all tests:
+    > npm run test
+    - To execute by tags
+    > npx playwright test --headed --grep @tags
+
+**Project Structure:**
+tests
+|
+|___features
+|   |__*.feature
+|
+|___fixtures
+|   |__fixtures.js
+|
+|___pages
+|   |__element.js
+|   |__sauceDemoObj.js
+|
+|___steps
+    |__sauceDemoSteps.js

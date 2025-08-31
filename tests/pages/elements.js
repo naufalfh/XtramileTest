@@ -15,5 +15,8 @@ export const elements = {
     "firstItem": "//div[@data-test='inventory-item'][1]",
     "addToCartButton": "//button[@id='add-to-cart-sauce-labs-backpack']",
     "cartBadge": "//span[@data-test='shopping-cart-badge']",
-    "removeButton": "//button[@id='remove-sauce-labs-backpack']"
+    "removeButton": "//button[@id='remove-sauce-labs-backpack']",
+    // logout
+    "menuButton": "//button[@id='react-burger-menu-btn']",
+    "logoutButton": "//a[@id='logout_sidebar_link']"
 }

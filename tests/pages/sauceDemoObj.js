@@ -3,11 +3,6 @@ import { expect } from "@playwright/test";
 class SauceDemoPage {
     constructor(page) {
         this.page = page;
-        // this.usernameField = page.locator('#user-name');
-        // this.passwordField = page.locator('#password');
-        // this.loginButton = page.locator('#login-button');
-        // this.errorMessage = page.locator('[data-test="error"]');
-        // this.productTitle = page.locator('.title');
     }
 
     async navigateToUrl(url) {
@@ -22,8 +17,16 @@ class SauceDemoPage {
         await this.page.locator(element).fill(value);
     }
 
+    async selectFromOption(element, option) {
+        await this.page.locator(element).selectOption(option);
+    }
+
     async verifyElementIsVisible(element) {
         await expect(this.page.locator(element)).toBeVisible();
+    }
+
+    async verifyElementIsNotVisible(element) {
+        await expect(this.page.locator(element)).toBeHidden();
     }
 
     async verifyTextIsVisible(text) {

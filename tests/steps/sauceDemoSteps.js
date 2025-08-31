@@ -16,13 +16,12 @@ When('User click on {string}', async ({sauceDemoPage}, element) => {
     }
 })
 
-When('User select {string} on {string}', async ({sauceDemoPage}, option, element) => {
+When('User select {string} on {string} list', async ({sauceDemoPage}, option, element) => {
     for (let item in elements) {
         if (item === element) {
-            await sauceDemoPage.clickElement(elements[item]);
+            await sauceDemoPage.selectFromOption(elements[item], option);
         }
     }
-    await sauceDemoPage.selectOption(option);
 })
 
 When('User input {string} on {string}', async ({sauceDemoPage}, value, element) => {
@@ -40,6 +39,15 @@ Then('User verify element {string} is visible', async ({sauceDemoPage}, element)
         }
     }
 })
+
+Then('User verify element {string} is not visible', async ({sauceDemoPage}, element) => {
+    for (let item in elements) {
+        if (item === element) {
+            await sauceDemoPage.verifyElementIsNotVisible(elements[element]);
+        }
+    }
+})
+
 
 Then('User verify text {string} is visible', async ({sauceDemoPage}, text) => {
     await sauceDemoPage.verifyTextIsVisible(text);

@@ -1,4 +1,4 @@
-@Login @only
+@Login
 Feature: Sauce Demo Login Page
     Background:
         Given User navigates to "https://www.saucedemo.com/"

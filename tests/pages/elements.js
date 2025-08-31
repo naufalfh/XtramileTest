@@ -12,5 +12,8 @@ export const elements = {
     // product
     "inventoryContainer": "//div[@data-test='inventory-container']",
     "sortButton": "//select[@data-test='product-sort-container']",
-    "firstItem": "//div[@data-test='inventory-item'][1]"
+    "firstItem": "//div[@data-test='inventory-item'][1]",
+    "addToCartButton": "//button[@id='add-to-cart-sauce-labs-backpack']",
+    "cartBadge": "//span[@data-test='shopping-cart-badge']",
+    "removeButton": "//button[@id='remove-sauce-labs-backpack']"
 }

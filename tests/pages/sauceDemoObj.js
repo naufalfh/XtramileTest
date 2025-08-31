@@ -22,8 +22,16 @@ class SauceDemoPage {
         await this.page.locator(element).fill(value);
     }
 
+    async selectFromOption(element, option) {
+        await this.page.locator(element).selectOption(option);
+    }
+
     async verifyElementIsVisible(element) {
         await expect(this.page.locator(element)).toBeVisible();
+    }
+
+    async verifyElementIsNotVisible(element) {
+        await expect(this.page.locator(element)).toBeHidden();
     }
 
     async verifyTextIsVisible(text) {

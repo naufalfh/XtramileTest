@@ -30,14 +30,14 @@
 tests\
 |\
 |___features\
-|   |__*.feature\
+|---|__*.feature\
 |\
 |___fixtures\
-|   |__fixtures.js\
+|---|__fixtures.js\
 |\
 |___pages\
-|   |__element.js\
-|   |__sauceDemoObj.js\
+|---|__element.js\
+|---|__sauceDemoObj.js\
 |\
 |___steps\
-    |__sauceDemoSteps.js
+----|__sauceDemoSteps.js
